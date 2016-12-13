@@ -1,5 +1,5 @@
 import Foundation
-import Alamofire
+import AlamofireDomain
 
 /// Protocol to define the base URL, path, method, parameters and sample data for a target.
 public protocol TargetType {
@@ -19,7 +19,7 @@ public extension TargetType {
 }
 
 /// Represents an HTTP method.
-public typealias Method = Alamofire.HTTPMethod
+public typealias Method = AlamofireDomain.HTTPMethod
 
 extension Method {
     public var supportsMultipart: Bool {

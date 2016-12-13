@@ -1,26 +1,26 @@
 import Foundation
-import Alamofire
+import AlamofireDomain
 
-public typealias Manager = Alamofire.SessionManager
-internal typealias Request = Alamofire.Request
-internal typealias DownloadRequest = Alamofire.DownloadRequest
-internal typealias UploadRequest = Alamofire.UploadRequest
-internal typealias DataRequest = Alamofire.DataRequest
+public typealias Manager = AlamofireDomain.SessionManager
+internal typealias Request = AlamofireDomain.Request
+internal typealias DownloadRequest = AlamofireDomain.DownloadRequest
+internal typealias UploadRequest = AlamofireDomain.UploadRequest
+internal typealias DataRequest = AlamofireDomain.DataRequest
 
-internal typealias URLRequestConvertible = Alamofire.URLRequestConvertible
+internal typealias URLRequestConvertible = AlamofireDomain.URLRequestConvertible
 
 /// Choice of parameter encoding.
-public typealias ParameterEncoding = Alamofire.ParameterEncoding
-public typealias JSONEncoding = Alamofire.JSONEncoding
-public typealias URLEncoding = Alamofire.URLEncoding
-public typealias PropertyListEncoding = Alamofire.PropertyListEncoding
+public typealias ParameterEncoding = AlamofireDomain.ParameterEncoding
+public typealias JSONEncoding = AlamofireDomain.JSONEncoding
+public typealias URLEncoding = AlamofireDomain.URLEncoding
+public typealias PropertyListEncoding = AlamofireDomain.PropertyListEncoding
 
 /// Multipart form
-public typealias RequestMultipartFormData = Alamofire.MultipartFormData
+public typealias RequestMultipartFormData = AlamofireDomain.MultipartFormData
 
 /// Multipart form data encoding result.
 public typealias MultipartFormDataEncodingResult = Manager.MultipartFormDataEncodingResult
-public typealias DownloadDestination = Alamofire.DownloadRequest.DownloadFileDestination
+public typealias DownloadDestination = AlamofireDomain.DownloadRequest.DownloadFileDestination
 
 /// Make the Alamofire Request type conform to our type, to prevent leaking Alamofire to plugins.
 extension Request: RequestType { }

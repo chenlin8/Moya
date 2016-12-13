@@ -1,4 +1,4 @@
-import Alamofire
+import AlamofireDomain
 
 /// These functions are default mappings to `MoyaProvider`'s properties: endpoints, requests, manager, etc.
 public extension MoyaProvider {
