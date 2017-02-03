@@ -84,7 +84,9 @@ private extension NetworkLoggerPlugin {
             }
         }
 
-        return output
+        // merge to one line
+        let singleLine = output.joined(separator: "\n")
+        return [singleLine]
     }
 
     func logNetworkResponse(_ response: URLResponse?, data: Data?, target: TargetType) -> [String] {
@@ -102,7 +104,8 @@ private extension NetworkLoggerPlugin {
             }
         }
 
-        return output
+        let singleLine = output.joined(separator: "\n")
+        return [singleLine]
     }
 }
 
